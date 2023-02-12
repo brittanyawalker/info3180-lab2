@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block main %}
+    <div id = "container">
+        <div id="main">
+            <div id = "top">
+                <div id = "photo">
+                    <img src="{{url_for('static', filename = 'image.jpg')}}" alt=" Thinking out loud">
+                </div>
+
+                <div id = "details">
+                    <h2>Brittany A Walker</h2>
+                    <p>@BriBubbles</p>
+                    <p>Kingston,Jamaica</p>
+                    <p>Joined {{ date }}</p>
+                </div>
+            </div>
+
+            <div id = "bottom">
+                <div id = "bio">
+                    <p> I'm a double major student in Computer Science and Ecomonics, who loves asian culture and experincing new things. </p>
+                </div>
+
+                <div id = "activity">
+                    <div id="posts"><p><b>10</b><br>Posts</p></div>
+                    <div id="following"><p><b>580</b><br>Following</p></div>
+                    <div id="followers"><p><b>960</b><br>Followers</p></div>
+                </div>
+
+                <div id = "follow-btn">
+                    <button>Follow</button>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
